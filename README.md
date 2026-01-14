@@ -21,10 +21,8 @@ Transforming ideas into reality through code. I'm a passionate developer who bel
 ### 📊 GitHub Analytics
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=mehmetbozkurt0&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mehmetbozkurt0&layout=compact&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515" />
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=mehmetbozkurt0&theme=tokyonight&area=true&hide_border=true" />
 </p>
-
 ---
 
 ### 🤝 Connect with Me
