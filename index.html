@@ -1,67 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mehmet Bozkurt | Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-border {
+            position: relative;
+            border-radius: 1.5rem;
+            background: rgba(15, 23, 42, 0.6);
+            transition: all 0.3s ease;
+        }
+        .gradient-border:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans leading-normal tracking-normal">
+<body class="bg-[#020617] text-slate-200 selection:bg-blue-500/30">
 
-    <div class="max-w-4xl mx-auto my-10 p-8 bg-gray-800 shadow-2xl rounded-lg border border-gray-700">
-        <header class="text-center mb-10">
-            <h1 class="text-4xl font-bold text-white mb-2">Mehmet Bozkurt</h1>
-            <p class="text-xl text-blue-400">Software Engineer | Android & KMP Specialist</p>
-            <div class="mt-4 flex justify-center space-x-6 text-gray-400">
-                <a href="mailto:mehmet.64.b@gmail.com" class="hover:text-white"><i class="fas fa-envelope mr-2"></i>Email</a>
-                <a href="https://linkedin.com/in/mehmetbozkurt04" class="hover:text-white"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
-                <a href="https://github.com/mehmetbozkurt0" class="hover:text-white"><i class="fab fa-github mr-2"></i>GitHub</a>
+    <header class="py-20 px-6 border-b border-slate-800/50 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-6xl font-extrabold text-white mb-4 tracking-tight">MEHMET <span class="text-blue-500">BOZKURT</span></h1>
+            <p class="text-2xl text-blue-400 font-medium mb-8">Software Engineer</p>
+            
+            <div class="flex flex-wrap justify-center gap-6 text-slate-400 text-sm md:text-base">
+                <a href="https://github.com/mehmetbozkurto" class="flex items-center gap-2 hover:text-white transition-colors">
+                    <i data-lucide="github" class="w-5 h-5"></i> github.com/mehmetbozkurto
+                </a>
+                <span class="flex items-center gap-2"><i data-lucide="mail" class="w-5 h-5"></i> mehmet.64.b@gmail.com</span>
+                <span class="flex items-center gap-2"><i data-lucide="phone" class="w-5 h-5"></i> +90 505 991 9019</span>
+                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-5 h-5"></i> İstanbul, Türkiye</span>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <section class="mb-10">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4 text-white">Summary</h2>
-            <p class="text-gray-300">
-                Software Engineer focused on Native Android (Kotlin & Compose), Kotlin Multiplatform (KMP), and modern Web technologies. 
-                Passionate about building scalable products and AI-supported applications.
+    <main class="max-w-4xl mx-auto px-6 py-16 space-y-24">
+        
+        <section>
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-3xl font-bold text-white">Hakkımda</h2>
+                <div class="h-[2px] flex-grow bg-gradient-to-r from-blue-500/50 to-transparent"></div>
+            </div>
+            <p class="text-xl leading-relaxed text-slate-400 font-light">
+                [cite_start]Native Android <span class="text-blue-400 font-normal">(Kotlin & Compose)</span> odaklı, Kotlin Multiplatform (KMP) ve modern Web teknolojileriyle ölçeklenebilir ürünler geliştirmeye tutkulu bir mühendisim[cite: 7]. [cite_start]Python (FastAPI) ile veri odaklı projeler geliştiriyor, kullanıcı deneyimini her zaman en önde tutuyorum[cite: 8].
             </p>
         </section>
 
-        <section class="mb-10">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4 text-white">Technical Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div>
-                    <h3 class="font-bold text-blue-300">Languages</h3>
-                    <p>Kotlin, TypeScript, Python, SQL</p>
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="p-8 rounded-3xl border border-slate-800 bg-slate-900/30 hover:bg-slate-900/50 transition-all">
+                <div class="flex items-center gap-3 text-blue-400 mb-6">
+                    <i data-lucide="smartphone" class="w-6 h-6"></i>
+                    <h3 class="text-xl font-bold uppercase tracking-wider">Mobile & Languages</h3>
                 </div>
-                <div>
-                    <h3 class="font-bold text-blue-300">Mobile</h3>
-                    <p>Jetpack Compose, KMP, Coroutines</p>
+                <ul class="space-y-4 text-slate-400">
+                    [cite_start]<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Kotlin, TypeScript, JavaScript, Python, SQL [cite: 13]</li>
+                    [cite_start]<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Android SDK, Jetpack Compose [cite: 14]</li>
+                    [cite_start]<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> Kotlin Multiplatform, Coroutines & Flow [cite: 14]</li>
+                </ul>
+            </div>
+
+            <div class="p-8 rounded-3xl border border-slate-800 bg-slate-900/30 hover:bg-slate-900/50 transition-all">
+                <div class="flex items-center gap-3 text-blue-400 mb-6">
+                    <i data-lucide="code-2" class="w-6 h-6"></i>
+                    <h3 class="text-xl font-bold uppercase tracking-wider">Web & Architecture</h3>
                 </div>
-                <div>
-                    <h3 class="font-bold text-blue-300">Web/Backend</h3>
-                    <p>React, Next.js, FastAPI, Node.js</p>
+                <ul class="space-y-4 text-slate-400">
+                    [cite_start]<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> React, Next.js, FastAPI, Node.js [cite: 15]</li>
+                    [cite_start]<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> MVVM, MVI, Clean Architecture [cite: 16]</li>
+                    [cite_start]<li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div> GitHub Actions, Dependency Injection [cite: 16]</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <h2 class="text-3xl font-bold text-white">Başlıca Projeler</h2>
+                <div class="h-[2px] flex-grow bg-gradient-to-r from-blue-500/50 to-transparent"></div>
+            </div>
+            
+            <div class="space-y-8">
+                <div class="gradient-border p-8 border border-slate-800 group">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">FizyoQ - Fizyoterapi Yönetim Sistemi</h3>
+                        <span class="text-xs font-mono text-blue-500 bg-blue-500/10 px-3 py-1 rounded-full">KMP / FastAPI</span>
+                    </div>
+                    [cite_start]<p class="text-slate-400 mb-6 leading-relaxed">Android ve Masaüstü platformlarında çalışan, randevu ve hasta takip odaklı gerçek zamanlı senkronizasyon sistemi[cite: 19, 20].</p>
+                </div>
+
+                <div class="gradient-border p-8 border border-slate-800 group">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">Languify - AI Dil Öğrenme</h3>
+                        <span class="text-xs font-mono text-blue-500 bg-blue-500/10 px-3 py-1 rounded-full">Android / Gemini AI</span>
+                    </div>
+                    [cite_start]<p class="text-slate-400 mb-6 leading-relaxed">Gemini AI API kullanarak kullanıcının öğrendiği kelimelerle kişiselleştirilmiş hikayeler üreten Android uygulaması[cite: 22].</p>
+                </div>
+
+                <div class="gradient-border p-8 border border-slate-800 group">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">Akıllı Görev Yönetimi</h3>
+                        <span class="text-xs font-mono text-blue-500 bg-blue-500/10 px-3 py-1 rounded-full">FastAPI / Gemini 1.5</span>
+                    </div>
+                    [cite_start]<p class="text-slate-400 mb-6 leading-relaxed">Gemini 1.5 Flash ile kullanıcı performansını analiz eden ve kişiselleştirilmiş öneriler sunan backend servisi[cite: 27, 28].</p>
                 </div>
             </div>
         </section>
 
-        <section class="mb-10">
-            <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2 mb-4 text-white">Education</h2>
-            <div class="mb-4">
-                <h3 class="font-bold text-gray-100">Manisa Celal Bayar University</h3>
-                <p class="text-gray-400">Software Engineering | 2023 - 2027 (Expected)</p>
+        <section>
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-3xl font-bold text-white">Eğitim</h2>
+                <div class="h-[2px] flex-grow bg-gradient-to-r from-blue-500/50 to-transparent"></div>
             </div>
-            <div>
-                <h3 class="font-bold text-gray-100">Google AI & Tech Academy</h3>
-                <p class="text-gray-400">AI-Supported Applications | 2024 - 2025</p>
+            <div class="space-y-8">
+                <div class="flex gap-6 items-start">
+                    <div class="p-3 bg-blue-500/10 rounded-2xl"><i data-lucide="graduation-cap" class="text-blue-500"></i></div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white">Manisa Celal Bayar Üniversitesi</h4>
+                        <p class="text-blue-400">Yazılım Mühendisliği | [cite_start]2023 - 2027 (Tahmini) [cite: 10]</p>
+                    </div>
+                </div>
+                <div class="flex gap-6 items-start">
+                    <div class="p-3 bg-blue-500/10 rounded-2xl"><i data-lucide="cpu" class="text-blue-500"></i></div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white">Google Yapay Zeka ve Teknoloji Akademisi</h4>
+                        <p class="text-blue-400">Yapay Zeka Destekli Uygulamalar | [cite_start]2024 - 2025 [cite: 11]</p>
+                    </div>
+                </div>
             </div>
         </section>
+    </main>
 
-        <footer class="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-6">
-            <p>© 2024 Mehmet Bozkurt - Hosted on GitHub Pages</p>
-        </footer>
-    </div>
+    <footer class="py-12 border-t border-slate-900 text-center text-slate-500 text-sm">
+        <p>© 2026 Mehmet Bozkurt. Built with passion.</p>
+    </footer>
 
+    <script>
+        // İkonları yükle
+        lucide.createIcons();
+    </script>
 </body>
 </html>
